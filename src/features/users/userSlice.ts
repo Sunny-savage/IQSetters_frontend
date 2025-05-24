@@ -7,7 +7,6 @@ interface User {
   age: string;
 }
 
-
 interface UserState {
   users: User[];
   loading: boolean;
@@ -20,8 +19,7 @@ interface UserState {
   };
 }
 
-
-const initialState : UserState = {
+const initialState: UserState = {
   users: [],
   loading: false,
   error: null,
@@ -45,9 +43,10 @@ const userSlice = createSlice({
       state.error = action.payload;
     },
 
-    addUser: (state, action) => {},
-    deleteUser: (state, action) => {},
-    updateUser: (state, action) => {},
+    addUser: (_state, _action) => {},
+    deleteUser: (_state, _action) => {},
+    updateUser: (_state, _action) => {},
+
     setFormState: (state, action) => {
       state.formState = action.payload;
     },
